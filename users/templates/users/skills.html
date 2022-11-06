@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+  edit skill
+{% endblock %}
+
+
+{% block content %}
+  <!-- Main Section -->
+<main class="formPage my-xl">
+  <div class="content-box">
+    <div class="formWrapper">
+      <a class="backButton" href="{% url "user-account-page" %}"><i class="im im-angle-left"></i></a>
+        <br>
+
+        <form class="form" action="" method="POST">
+          {% csrf_token %}
+          {% for filed in form %}
+          <!-- Input:Text -->
+            <div class="form__field">
+              <label for="formInput#text">{{filed.label}}</label>
+              {{filed}}
+            </div>
+          {% endfor %}
+          <input class="btn btn--sub btn--lg  my-md" type="submit" value="Submit" />
+        </form>
+     </div>
+    </div>
+</main>
+{% endblock %}
+
