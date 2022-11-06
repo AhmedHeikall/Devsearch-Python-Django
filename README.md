@@ -1,6 +1,8 @@
-# DevSearch
+# DevSearch 
 
-Sourcode and Resources for Django 2021 Course
+developers search mix between (GitHub & LinkedIn) using a python-Django framework
+
+
 
 See the project here: https://youtu.be/ZLmNfrJV820
 
